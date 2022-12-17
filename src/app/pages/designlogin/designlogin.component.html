@@ -1,0 +1,35 @@
+<!-- ***** Furniture Section Starts ***** -->
+<section class="section" id="men">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>Shop By Categories</h2>
+                    <span>Start shopping based on the categories you are interested in</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true" [keyboard]="true"
+        [pauseOnHover]="true" [wrap]="true" [activeId]="'secondSlide'">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="assets/img/bannerimg.jpg" alt="">
+            </div>
+            <div class="carousel-caption">
+                <h3>Title Goes Here</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="assets/img/bannerimg.jpg" alt="Angular Carousel 2">
+            </div>
+            <div class="carousel-caption">
+                <h3>Title Goes Here</h3>
+                <p>Consectetur tortor volutpat pretium.</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</section>
+<!-- ***** Furniture Section Ends ***** -->

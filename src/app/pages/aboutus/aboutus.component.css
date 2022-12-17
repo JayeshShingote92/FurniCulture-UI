@@ -1,0 +1,88 @@
+  .about_section .img-box,
+  .contact_section .form_container {
+      margin-bottom: 45px;
+  }
+
+  .about_section {
+      background-color: #3b4a6b;
+      color: #ffffff;
+  }
+
+  .about_section .row {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+
+  .about_section .img-box {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+  }
+
+  .about_section .img-box img {
+      width: 100%;
+      max-width: 375px;
+  }
+
+  .about_section .detail-box p {
+      margin-top: 15px;
+  }
+
+  .about_section .detail-box a {
+      display: inline-block;
+      padding: 10px 45px;
+      background-color: #f0d43a;
+      color: #ffffff;
+      border-radius: 5px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      border: 1px solid #f0d43a;
+      margin-top: 15px;
+  }
+
+  .about_section .detail-box a:hover {
+      color: #ffffff;
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+
+  .about_section {
+      background-color: #3b4a6b;
+      color: white;
+  }
+
+  .about_section.row {
+      align-items: center;
+  }
+
+  .about_section.img-box {
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+
+  .about_section.img {
+      width: 100%;
+      max-width: 375px;
+  }
+
+  .about_section.detail-box.p {
+      margin-top: 15px;
+  }
+
+  .about_section.detail-box.a {
+      margin-top: 15px;
+  }
+
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    transform: scale(.7) !important;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  }
