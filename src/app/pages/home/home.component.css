@@ -1,28 +1,31 @@
-.banner
+.top-banner
 {
-    background-image: url('../../../assets/img/bannerimg.jpg');
-    height: 600px;
-    background-position: center top;
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 52%), rgb(0 0 0)),url(https://images.pexels.com/photos/5002428/pexels-photo-5002428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 100vh;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -5%;
 }
-.content
-{
-    top: 30%;
-    left: 5%;
-    position: absolute;
+.banner-content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.content h1 
+.banner-content h1 
 {
     color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-  
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+    font-family: poppins;
 }
-.content a 
-{
-    text-decoration: none;
-    background-color: #fff;
-    color: var(--primary-color);
-    padding: 15px 20px;
-    border-radius: 5px;
+.banner-content p {
+    color: white;
+    font-size: 16px;
 }
+
+
+

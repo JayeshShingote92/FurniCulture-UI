@@ -1,9 +1,25 @@
 .navbar-light .navbar-nav .nav-link
 {
-    color: var(--secondary-color);
+    color: #fff;
 }
 .navbar-light .navbar-nav .nav-link.active-link
 {
-    color: var(--primary-color);
-    text-decoration: underline;
+    color: #d6791f;
+    text-decoration: none;
+}
+li.nav-item a {
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+li.nav-item.btn-1 a {
+    color: white !important;
+}
+
+
+.navbar-brand {
+    color: #fff !important;
+    font-family: monospace;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 22px;
 }

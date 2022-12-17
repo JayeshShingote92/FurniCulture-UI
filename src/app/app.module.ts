@@ -14,7 +14,8 @@ import { DesignloginComponent } from './pages/designlogin/designlogin.component'
 import { ProductandservicesComponent } from './pages/productandservices/productandservices.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SlickCarouselModule } from 'ngx-slick-carousel';  
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     ContactComponent,
     CustomizedComponent,
     DesignloginComponent,
-    ProductandservicesComponent
+    ProductandservicesComponent,
+
   ],
   imports: [
     BrowserModule,

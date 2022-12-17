@@ -59,3 +59,11 @@ ngb-carousel {
 .carousel-indicators {
     z-index: 20;
 }
+
+
+
+/* CATEGORIES */
+
+.box-content img {
+    width: 35%;
+}
