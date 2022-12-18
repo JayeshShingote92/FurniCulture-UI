@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProductandservicesComponent {
   slideConfig = {  
-    "slidesToShow": 3,  
+    "slidesToShow": 4,  
     "slidesToScroll": 3,  
     "dots": true,  
     "infinite": true,

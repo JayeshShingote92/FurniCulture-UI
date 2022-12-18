@@ -39,6 +39,7 @@ section{
     background-color: #d6791f;
     color: #fff !important;
     text-decoration: none;
+    border-radius: 50px;
 }
 
 /* TEXT */
@@ -103,6 +104,9 @@ section{
 }
 
 /* TRANSITION */
+.transition-up {
+    transition: 0.5s ease-in-out;
+}
 .transition-up:hover{
     transition: 0.5s ease-in-out;
     margin-bottom: 5% !important;
