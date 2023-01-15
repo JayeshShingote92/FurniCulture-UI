@@ -49,3 +49,39 @@ body .slick-next {
     height: 300px;
     object-fit: cover;
 }
+
+
+/* SERVICES ACCORDIAN */
+.services-info .accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #e7f1ff00;
+ 
+}
+.services-info div#myAccordion {
+    --bs-accordion-bg: transparent !important;
+    border: none;
+    --bs-accordion-border-color: none;
+}
+.services-info p,
+.services-info h2 button {
+    color: white;
+}
+.services-info .accordion-item {
+    border-bottom: 1px solid white;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image:'/src/assets/img/down-arrow.png';
+    transform: var(--bs-accordion-btn-icon-transform);
+}
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image:'/src/assets/img/down-arrow.png';
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}

@@ -15,6 +15,11 @@ import { ProductandservicesComponent } from './pages/productandservices/producta
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { BgTextComponent } from './pages/bg-text/bg-text.component';
+import { TestimonialComponent } from './pages/testimonial/testimonial.component';
+import { DiscountComponent } from './pages/discount/discount.component';
+import { BgTextTwoComponent } from './pages/bg-text-two/bg-text-two.component';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +33,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     CustomizedComponent,
     DesignloginComponent,
     ProductandservicesComponent,
+    BgTextComponent,
+    TestimonialComponent,
+    DiscountComponent,
+    BgTextTwoComponent,
 
   ],
   imports: [

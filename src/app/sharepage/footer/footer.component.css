@@ -9,7 +9,7 @@ footer {
     padding:2em 0;
 }
 .footer-06 .aside-stretch {
-    background: #3e1f00;
+    background: #5c2018;
 }
 .footer-06 .subheading {
     color: rgba(255, 255, 255, 0.3);
@@ -35,7 +35,7 @@ footer {
     background: #007bff;
 }
 .footer-06 .aside-stretch-right {
-    background: #542b02;
+    background: #bc4639;
 }
 .footer-06 .subscribe-form {
     border-radius: 40px;
@@ -95,7 +95,7 @@ footer {
     width: 150px;
     height: 56px;
     font-size: 14px;
-    background: #d6791f !important;
+    background: #5c2018 !important;
     border: none;
     letter-spacing: 1px;
     text-transform: uppercase;

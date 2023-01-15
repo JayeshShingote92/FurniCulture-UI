@@ -5,11 +5,7 @@
     margin: 0;
     font-family: 'poppins';
 }
-:root
-{
-    --primary-color:#3FC060;
-    --secondary-color:#162328;
-}
+
 body
 {
     height: 100vh;
@@ -36,13 +32,27 @@ section{
     padding: 5px 20px;
     letter-spacing: 1px;
     transition: all 0.3s ease-out 0s;
-    background-color: #d6791f;
+    background-color: #bc4639;
     color: #fff !important;
     text-decoration: none;
     border-radius: 50px;
 }
 
 /* TEXT */
+.sub-title {
+    font-size: 18px !important;
+    position: relative;
+}
+.sub-title:before {
+    content: "";
+    width: 5%;
+    height: 1.5px;
+    background: #f3e0dc;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+}
 .title_heading {
     font-family: Poppins;
     font-size: 35px;
@@ -57,7 +67,7 @@ section{
     content: "";
     width: 50%;
     height: 2px;
-    background: #d6791f;
+    background: #bc4639;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -88,9 +98,11 @@ section{
 
 /* COLORS */
 .orange-yellow{
-   color:#d6791f;
+   color:#bc4639;
 }
-
+.dark-brown-bg{
+background-color: #5c2018;
+}
 .grey-blue{
     color:#3b4a6b;
 }
@@ -102,6 +114,9 @@ section{
 .black{
     color:#000;
 }
+.bg-light-pink{
+    background-color: #f3e0dc;
+}
 
 /* TRANSITION */
 .transition-up {
@@ -111,4 +126,38 @@ section{
     transition: 0.5s ease-in-out;
     margin-bottom: 5% !important;
     transform:translateY(10px);
+}
+
+
+/* SLIDER */
+.slick-prev {
+    left: 40px !important;
+}
+.slick-next {
+    right: 40px !important;
+}
+
+
+/* IMAGE BOX */
+.img-box img {
+    transition: 0.5s ease-in-out;
+}
+.img-box img:hover {
+  transform: translateX(10px);
+  transition: 0.5s ease-in-out;
+}
+
+
+/* FORM */
+.bg-expand-form{
+    background: transparent !important;
+    border: none !important;
+    margin: auto;
+}
+section.bg-text{
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    padding: 70px 0px;
+    background-attachment: fixed;
 }

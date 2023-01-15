@@ -2,15 +2,27 @@
 <section class="top-banner">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <div class="banner-content">
+            <ngx-slick-carousel class="slider" #slickModal="slick-carousel" [config]="slide">
+                <div ngxSlickItem class="banner-content">
                     <h1 class="mb-3">We craft your space<br /> with style and comfort</h1>
                     <p>We are the first manufacturer of multifunctional and convertible furniture in India</p>
-                    <a class="btn-1 pt-3 pb-3">Shop Now</a>
+                    <!-- <a class="btn-1 pt-3 pb-3">Shop Now</a> -->
                 </div>
-            </div>
+                <div ngxSlickItem class="banner-content">
+                    <h1 class="mb-3">We craft your space<br /> with style and comfort</h1>
+                    <p>We are the first manufacturer of multifunctional and convertible furniture in India</p>
+                    <!-- <a class="btn-1 pt-3 pb-3">Shop Now</a> -->
+                </div>
+                <div ngxSlickItem class="banner-content">
+                    <h1 class="mb-3">We craft your space<br /> with style and comfort</h1>
+                    <p>We are the first manufacturer of multifunctional and convertible furniture in India</p>
+                    <!-- <a class="btn-1 pt-3 pb-3">Shop Now</a> -->
+                </div>
+            </ngx-slick-carousel>
         </div>
     </div>
 </section>
 
+
 <!-- ***** Main Banner Area End ***** -->
+
