@@ -15,12 +15,14 @@ import { ProductandservicesComponent } from './pages/productandservices/producta
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { BgTextComponent } from './pages/bg-text/bg-text.component';
 import { TestimonialComponent } from './pages/testimonial/testimonial.component';
 import { DiscountComponent } from './pages/discount/discount.component';
-import { BgTextTwoComponent } from './pages/bg-text-two/bg-text-two.component';
-
-
+import { AntiquemoduleComponent } from './pages/antiquemodule/antiquemodule.component';
+import { IntromoduleComponent } from './pages/intromodule/intromodule.component';
+import { InnovationmoduleComponent } from './pages/innovationmodule/innovationmodule.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { ExchangemoduleComponent } from './pages/exchangemodule/exchangemodule.component';
+import { PagenotfounderrorComponent } from './sharepage/pagenotfounderror/pagenotfounderror.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,17 +35,21 @@ import { BgTextTwoComponent } from './pages/bg-text-two/bg-text-two.component';
     CustomizedComponent,
     DesignloginComponent,
     ProductandservicesComponent,
-    BgTextComponent,
     TestimonialComponent,
     DiscountComponent,
-    BgTextTwoComponent,
-
+    AntiquemoduleComponent,
+    IntromoduleComponent,
+    InnovationmoduleComponent,
+    ExchangemoduleComponent,
+    PagenotfounderrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule,
     NgbModule,
     SlickCarouselModule 
   ],
