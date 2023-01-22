@@ -9,16 +9,16 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { CareerComponent } from './pages/career/career.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { CustomizedComponent } from './pages/customized/customized.component';
+import { CustomizedmoduleComponent } from './pages/customizedmodule/customizedmodule.component';
 import { DesignloginComponent } from './pages/designlogin/designlogin.component';
 import { ProductandservicesComponent } from './pages/productandservices/productandservices.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { BgTextComponent } from './pages/bg-text/bg-text.component';
 import { TestimonialComponent } from './pages/testimonial/testimonial.component';
-import { DiscountComponent } from './pages/discount/discount.component';
-import { BgTextTwoComponent } from './pages/bg-text-two/bg-text-two.component';
+import { ExchangemoduleComponent } from './pages/exchangemodule/exchangemodule.component';
+import { ConvertingmoduleComponent } from './pages/convertingmodule/convertingmodule.component';
+import { AntiquemoduleComponent } from './pages/antiquemodule/antiquemodule.component';
 
 
 @NgModule({
@@ -30,13 +30,13 @@ import { BgTextTwoComponent } from './pages/bg-text-two/bg-text-two.component';
     AboutusComponent,
     CareerComponent,
     ContactComponent,
-    CustomizedComponent,
+    CustomizedmoduleComponent,
     DesignloginComponent,
     ProductandservicesComponent,
-    BgTextComponent,
     TestimonialComponent,
-    DiscountComponent,
-    BgTextTwoComponent,
+    ExchangemoduleComponent,
+    ConvertingmoduleComponent,
+    AntiquemoduleComponent,
 
   ],
   imports: [
