@@ -36,8 +36,7 @@ import { AntiquemoduleComponent } from './pages/antiquemodule/antiquemodule.comp
     TestimonialComponent,
     ExchangemoduleComponent,
     ConvertingmoduleComponent,
-    AntiquemoduleComponent,
-
+    AntiquemoduleComponent
   ],
   imports: [
     BrowserModule,
