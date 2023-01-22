@@ -44,6 +44,8 @@ import { AntiquemoduleComponent } from './pages/antiquemodule/antiquemodule.comp
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    HttpClientModule,
     NgbModule,
     SlickCarouselModule 
   ],
