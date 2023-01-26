@@ -1,9 +1,15 @@
 /* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+/* colors */
+:root {
+  --main-color:#bc4639;
+  --white:#fff;
+  --lightPink:#f3e0dc;
+  --fontBlack:#212529;
+}
 .card-box{
   box-shadow: 0 5px 19px rgb(0 0 0 / 9%);
-  background: #f3e0dc;
+  background: var(--lightPink);
   border-radius: 20px;
 }
 .card-box .content{
@@ -37,7 +43,7 @@
 }
 .content .left-side .details i{
   font-size: 30px;
-  color: #bc4639;
+  color: var(--main-color);
   margin-bottom: 10px;
 }
 .content .left-side .details .topic{
@@ -56,7 +62,7 @@
 .content .right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
-  color: #bc4639;
+  color: var(--main-color);
 }
 .right-side .input-box{
   height: 50px;
@@ -85,19 +91,17 @@
   margin-top: 12px;
 }
 .right-side .button input[type="button"]{
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   outline: none;
   border: none;
   padding: 8px 16px;
   border-radius: 50px;
-  background: #bc4639;
+  background: var(--main-color);
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover{
-  background: #5029bc;
-}
+
 
 @media (max-width: 950px) {
   .card-box{

@@ -1,3 +1,11 @@
+/* colors */
+:root {
+    --main-color:#bc4639;
+    --darkbrown:#5c2018;
+    --white:#fff;
+    --lightPink:#f3e0dc;
+    --fontBlack:#212529;
+}
 .footer-06 {
     padding-top: 0 !important;
     background: #000000;
@@ -35,11 +43,11 @@ footer {
     background: #007bff;
 }
 .footer-06 .aside-stretch-right {
-    background: #bc4639;
+    background: var(--main-color);
 }
 .footer-06 .subscribe-form {
     border-radius: 40px;
-    background: #fff;
+    background: var(--white);
     padding: 3px;
 }
 .footer-06 .subscribe-form .form-group {
@@ -58,7 +66,7 @@ footer {
 }
 .form-control {
     height: 52px;
-    background: #fff;
+    background: var(--white);
     color: #000;
     font-size: 18px;
     border-radius: 0px;
@@ -79,7 +87,7 @@ footer {
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: var(--white);
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
@@ -90,7 +98,7 @@ footer {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 .footer-06 .subscribe-form .form-group .submit {
-    color: #fff !important;
+    color: var(--white) !important;
     display: block;
     width: 150px;
     height: 56px;
@@ -103,21 +111,21 @@ footer {
 }
 .footer-06 .footer-heading {
     font-size: 20px;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 20px;
 }
 .footer-06 .footer-heading .logo {
-    color: #fff;
+    color: var(--white);
 }
 .footer-06 p {
     color: rgba(255, 255, 255, 0.3);
 }
 .footer-06 a {
-    color: #fff;
+    color: var(--white);
 }
 .footer-06 .footer-heading {
     font-size: 20px;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 20px;
 }
 .list-unstyled {

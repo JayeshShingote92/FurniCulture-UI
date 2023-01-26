@@ -1,3 +1,10 @@
+/* colors */
+:root {
+    --main-color:#bc4639;
+    --white:#fff;
+    --lightPink:#f3e0dc;
+    --fontBlack:#212529;
+}
 .slick-slider {
     width: 88%;
     margin: auto;
@@ -53,7 +60,7 @@ body .slick-next {
 
 /* SERVICES ACCORDIAN */
 .services-info .accordion-button:not(.collapsed) {
-    color: #ffffff;
+    color: var(--white);
     background-color: #e7f1ff00;
  
 }
@@ -64,10 +71,10 @@ body .slick-next {
 }
 .services-info p,
 .services-info h2 button {
-    color: white;
+    color: var(--white);
 }
 .services-info .accordion-item {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--white);
 }
 
 .accordion-button:not(.collapsed)::after {

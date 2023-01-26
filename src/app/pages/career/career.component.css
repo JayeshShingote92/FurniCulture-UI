@@ -1,0 +1,25 @@
+/* colors */
+:root {
+    --main-color:#bc4639;
+    --white:#fff;
+    --lightPink:#f3e0dc;
+    --fontBlack:#212529;
+}
+
+
+#career .card-box {
+    padding: 35px;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#career .card-box h3 {
+    font-size: 18px;
+    color: var(--fontBlack);
+    /* font-family: poppins; */
+}
+#career .card-box img {
+    width: 50px;
+}

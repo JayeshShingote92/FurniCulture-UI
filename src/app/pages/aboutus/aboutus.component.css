@@ -1,11 +1,19 @@
+/* colors */
+:root {
+    --main-color:#bc4639;
+    --white:#fff;
+    --lightPink:#f3e0dc;
+    --fontBlack:#212529;
+}
+  
   .about_section .img-box,
   .contact_section .form_container {
       margin-bottom: 45px;
   }
 
   .about_section {
-      background-color: #bc4639;
-      color: #ffffff;
+      background-color: var(--main-color);
+      color: var(--white);
   }
 
   .about_section .row {
@@ -33,17 +41,16 @@
   .about_section .detail-box a {
       display: inline-block;
       padding: 10px 45px;
-      background-color: #f0d43a;
-      color: #ffffff;
+   
+      color: var(--white);
       border-radius: 5px;
       -webkit-transition: all 0.3s;
-      transition: all 0.3s;
-      border: 1px solid #f0d43a;
+      transition: all 0.3s;  
       margin-top: 15px;
   }
 
   .about_section .detail-box a:hover {
-      color: #ffffff;
+      color: var(--white);
       -webkit-transform: translateY(-3px);
       transform: translateY(-3px);
   }
@@ -87,7 +94,7 @@
 
 
   .accordion-button:not(.collapsed) {
-    color: #bc4639 !important;
+    color: var(--main-color) !important;
     background-color: var(--bs-accordion-active-bg);
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }

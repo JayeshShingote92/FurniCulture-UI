@@ -1,11 +1,17 @@
+/* colors */
+:root {
+    --main-color:#bc4639;
+    --white:#fff;
+    --lightPink:#f3e0dc;
+    --fontBlack:#212529;
+}
 .top-banner
-{
-    background-image: linear-gradient(to bottom, rgb(0 0 0 / 52%), rgb(0 0 0)),url(https://images.pexels.com/photos/5002428/pexels-photo-5002428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+{   
     height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -5%;
+    margin-top: -10%;
 }
 .banner-content {
     height: 85vh;
@@ -13,10 +19,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .banner-content h1 
 {
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
     font-size: 45px;
     text-align: center;
@@ -31,6 +41,9 @@
 /* SLIDER */
 .slick-dotted.slick-slider {
     margin-bottom: 0px !important;
+}
+.top-banner .container-fluid {
+    padding: 0px;
 }
 
 
