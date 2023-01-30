@@ -1,10 +1,10 @@
 .navbar-light .navbar-nav .nav-link
 {
-    color: (--main-color) !important;
+    color: #EA4434 !important;
 }
 .navbar-light .navbar-nav .nav-link.active-link
 {
-    color: #d4a59a;
+    color: #EA4434;
     text-decoration: none;
 }
 li.nav-item a {
