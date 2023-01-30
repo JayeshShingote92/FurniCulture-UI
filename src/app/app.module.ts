@@ -19,6 +19,7 @@ import { TestimonialComponent } from './pages/testimonial/testimonial.component'
 import { ExchangemoduleComponent } from './pages/exchangemodule/exchangemodule.component';
 import { ConvertingmoduleComponent } from './pages/convertingmodule/convertingmodule.component';
 import { AntiquemoduleComponent } from './pages/antiquemodule/antiquemodule.component';
+import { EnquiryComponent } from './sharepage/enquiry/enquiry.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { AntiquemoduleComponent } from './pages/antiquemodule/antiquemodule.comp
     ExchangemoduleComponent,
     ConvertingmoduleComponent,
     AntiquemoduleComponent,
+    EnquiryComponent,
 
   ],
   imports: [
