@@ -13,7 +13,7 @@ export class HomeComponent {
     "infinite": true,
     "arrows": true,
     "autoplay": true,
-    "autoplaySpeed": 1000,    
+    "autoplaySpeed": 5000,    
   };  
   slickInit(e: any) {
     console.log('slick initialized');
