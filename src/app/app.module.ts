@@ -20,7 +20,9 @@ import { ExchangemoduleComponent } from './pages/exchangemodule/exchangemodule.c
 import { ConvertingmoduleComponent } from './pages/convertingmodule/convertingmodule.component';
 import { AntiquemoduleComponent } from './pages/antiquemodule/antiquemodule.component';
 import { EnquiryComponent } from './sharepage/enquiry/enquiry.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule }   from '@angular/forms';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -39,15 +41,17 @@ import { EnquiryComponent } from './sharepage/enquiry/enquiry.component';
     ConvertingmoduleComponent,
     AntiquemoduleComponent,
     EnquiryComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     NgbModule,
-    SlickCarouselModule 
+    SlickCarouselModule,
+    HttpClientModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

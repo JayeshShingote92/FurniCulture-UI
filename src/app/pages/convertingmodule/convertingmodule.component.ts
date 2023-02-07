@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./convertingmodule.component.css']
 })
 export class ConvertingmoduleComponent {
-
+  pageName: string = 'ConvertingModule';
 }

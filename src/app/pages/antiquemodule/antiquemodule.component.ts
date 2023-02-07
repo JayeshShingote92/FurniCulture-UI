@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./antiquemodule.component.css']
 })
 export class AntiquemoduleComponent {
-
+  pageName:string ="AntiqueModule";
 }

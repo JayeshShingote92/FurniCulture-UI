@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./exchangemodule.component.css']
 })
 export class ExchangemoduleComponent {
-
+  pageName:string = "ExchangeModule";
 }

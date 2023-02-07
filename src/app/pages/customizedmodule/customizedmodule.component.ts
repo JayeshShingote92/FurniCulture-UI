@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./customizedmodule.component.css']
 })
 export class CustomizedmoduleComponent {
-
+  pageName:string ="CustomizedModule";
 }

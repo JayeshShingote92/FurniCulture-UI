@@ -1,58 +1,76 @@
-
 <footer class="footer-06 mt-5">
     <div class="container-fluid">
-    <div class="row align-items-center align-items-stretch mb-3">
-    <div class="col-md-4 aside-stretch d-flex align-items-center">
-    <div class="w-100">
-    <span class="subheading">Subscribe to our</span>
-    <h3 class="heading-section">Newsletter</h3>
-    </div>
-    </div>
-    <div class="col-md-8 py-4 py-md-4 d-flex align-items-center pl-md-5 aside-stretch-right">
-    <form action="#" class="subscribe-form w-100">
-    <div class="form-group d-flex">
-    <input type="text" class="form-control rounded-left" placeholder="Enter email address">
-    <button type="submit" class="form-control submit"><span>Submit</span></button>
-    </div>
-    </form>
-    </div>
-    </div>
-    <div class="row pt-4">
-    
-    <div class="col-md-9 col-lg-6">
-    <div class="row">
-    <div class="col-md-8 mb-md-0 mb-4">
-    <h2 class="footer-heading">Contact Us</h2>
-    <ul class="list-unstyled">
-    <!-- <li><a href="#" class="py-1 d-block">Address : 3/164, Mandideep, Bhopal </a></li> -->
-    <li><a href = "mailto: vikramj@furnicultureindia.com" class="py-1 d-block">Email : vikramj@furnicultureindia.com</a></li>
-    </ul>
-    </div>
-   
-    <div class="col-md-4 mb-md-0 mb-4">
-    <h2 class="footer-heading">Social</h2>
-    <ul class="list-unstyled">
-    <li><a href="https://www.linkedin.com/company/furniculture-india/" target="_blank" class="py-1 d-block"><i class="fa fa-linkedin-square"></i></a></li>
-    <li><a href="https://www.facebook.com/profile.php?id=100088114537999" target="_blank" class="py-1 d-block"><i class="fa fa-facebook-square"></i></a></li>
-    <li><a href="https://twitter.com/Furnicultureind" target="_blank" class="py-1 d-block"><i class="fa fa-twitter-square"></i></a></li>
-    <li><a href="https://www.instagram.com/furnicultureindia/" target="_blank" class="py-1 d-block"><i class="fa fa-instagram"></i></a></li>
-    <li><a href="https://www.youtube.com/@furnicultureindia" target="_blank" class="py-1 d-block"><i class="fa fa-youtube"></i></a></li>
-    <li><a href="www.pinterest.com/vikramjangidindia" target="_blank" class="py-1 d-block"><i class="fa fa-pinterest-square"></i></a></li>
-    <li><a href="https://wa.me/919082868073" target="_blank" class="py-1 d-block"><i class="fa fa-whatsapp"></i></a></li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-3 col-lg-6 order-md-last">
-        <div class="row justify-content-end">
-        <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
-        <h2 class="footer-heading"><a href="#" class="logo">FurniCulture</a></h2>
-        <p class="copyright">
-        Copyright ©<script>document.write(new Date().getFullYear());</script>2023 All rights reserved 
-        </p>
+        <div class="row align-items-center align-items-stretch mb-3">
+            <div class="col-md-4 aside-stretch d-flex align-items-center">
+                <div class="w-100">
+                    <span class="subheading">Subscribe to our</span>
+                    <h3 class="heading-section">Newsletter</h3>
+                </div>
+            </div>
+            <div class="col-md-8 py-4 py-md-4 d-flex align-items-center pl-md-5 aside-stretch-right">
+                <form action="#" class="subscribe-form w-100">
+                    <div class="form-group d-flex">
+                        <input type="text" class="form-control rounded-left" placeholder="Enter email address"
+                            #subsciptionmail="ngModel" name="subsciptionmail" [(ngModel)]="subscribeEmail"
+                            [pattern]="emailPattern">
+                        <button type="button" class="form-control submit" (click)="onSubmitSubscriber()"><span>Submit</span></button>
+                    </div>
+                </form>
+                <div class="text-danger"
+                    *ngIf="(subsciptionmail.invalid && subsciptionmail.touched) || subsciptionmail.dirty"
+                    style="color: red;">
+                    <small class="text-danger" *ngIf="subsciptionmail.errors?.required">Email is
+                        required</small>
+                    <small class="text-danger" *ngIf="subsciptionmail.errors?.pattern">Email is
+                        invalid</small>
+                </div>
+            </div>
         </div>
-        </div>
+        <div class="row pt-4">
+
+            <div class="col-md-9 col-lg-6">
+                <div class="row">
+                    <div class="col-md-8 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Contact Us</h2>
+                        <ul class="list-unstyled">
+                            <!-- <li><a href="#" class="py-1 d-block">Address : 3/164, Mandideep, Bhopal </a></li> -->
+                            <li><a href="mailto: vikramj@furnicultureindia.com" class="py-1 d-block">Email :
+                                    vikramj@furnicultureindia.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <h2 class="footer-heading">Social</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.linkedin.com/company/furniculture-india/" target="_blank"
+                                    class="py-1 d-block"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100088114537999" target="_blank"
+                                    class="py-1 d-block"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://twitter.com/Furnicultureind" target="_blank" class="py-1 d-block"><i
+                                        class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="https://www.instagram.com/furnicultureindia/" target="_blank"
+                                    class="py-1 d-block"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/@furnicultureindia" target="_blank"
+                                    class="py-1 d-block"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="www.pinterest.com/vikramjangidindia" target="_blank" class="py-1 d-block"><i
+                                        class="fa fa-pinterest-square"></i></a></li>
+                            <li><a href="https://wa.me/919352412345" target="_blank" class="py-1 d-block"><i
+                                        class="fa fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-6 order-md-last">
+                <div class="row justify-content-end">
+                    <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+                        <h2 class="footer-heading"><a href="#" class="logo">FurniCulture</a></h2>
+                        <p class="copyright">
+                            Copyright ©
+                            <script>document.write(new Date().getFullYear());</script>2023 All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
-    </footer>
+</footer>
