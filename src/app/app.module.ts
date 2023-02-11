@@ -21,8 +21,10 @@ import { ConvertingmoduleComponent } from './pages/convertingmodule/convertingmo
 import { AntiquemoduleComponent } from './pages/antiquemodule/antiquemodule.component';
 import { EnquiryComponent } from './sharepage/enquiry/enquiry.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { DialogModule } from 'primeng/dialog';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -47,11 +49,18 @@ import { ToastrModule } from 'ngx-toastr';
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 10000, // 10 seconds
+      closeButton: false,
+      progressBar: false,
+    }
+    ),
     NgbModule,
     SlickCarouselModule,
     HttpClientModule,
-    FormsModule 
+    FormsModule,
+    DialogModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

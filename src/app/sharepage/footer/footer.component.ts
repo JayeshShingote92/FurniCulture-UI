@@ -12,6 +12,7 @@ export class FooterComponent {
   constructor(private commonservice: CommonService,private toasterservice: ToasterService) {
 
   }
+  subscriptionFlag : boolean = false;
   subscribeEmail: string = '';
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
 
@@ -22,6 +23,7 @@ export class FooterComponent {
       if (res.status == "Success") {
         this.toasterservice.showSuccess("Subscribed email successfully","");
         this.subscribeEmail = "";
+        this.subscriptionFlag = true;
       }
     })
   }

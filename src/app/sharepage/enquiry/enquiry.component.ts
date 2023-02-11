@@ -9,6 +9,9 @@ import { ToasterService } from 'src/app/common/services/toaster.service';
   styleUrls: ['./enquiry.component.css']
 })
 export class EnquiryComponent implements OnInit {
+  registrationFlag: boolean = false;
+  userName: string = 'Jayesh';
+  userEmailId: string = 'jayeshshingote';
   @Input() moduleName: string;
   mobNumberPattern = "^((\\+91-?)|0)?[0-9]{10}$";
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
@@ -19,10 +22,10 @@ export class EnquiryComponent implements OnInit {
     contactNumber: '',
     email: '',
     message: '',
-    pageName:''
+    pageName: ''
   };
 
-  constructor(private commonservice: CommonService,private toasterservice: ToasterService) {
+  constructor(private commonservice: CommonService, private toasterservice: ToasterService) {
   }
 
   ngOnInit(): void {
@@ -30,6 +33,7 @@ export class EnquiryComponent implements OnInit {
   }
 
   onSubmit() {
+
     console.log(this.moduleName);
     console.log("enquiryForm " + this.enquiryForm);
     this.customerEnquireDetailObj.name = this.enquiryForm.name;
@@ -41,11 +45,14 @@ export class EnquiryComponent implements OnInit {
     console.log("customerEnquireDetailObj " + this.customerEnquireDetailObj);
     this.commonservice.addCustomerEnquiry(this.customerEnquireDetailObj).subscribe((res: any) => {
       if (res.status == "Success") {
-        this.toasterservice.showSuccess("Enquiry save successfully","");
+        this.toasterservice.showSuccess("Enquiry save successfully", "");
+        this.registrationFlag = true;
+        this.userName = this.enquiryForm.name;
+        this.userEmailId = this.enquiryForm.email;
         this.resetForm();
       }
-      else{
-        this.toasterservice.showError("Something went wrong","");
+      else {
+        this.toasterservice.showError("Something went wrong", "");
       }
     })
   }
