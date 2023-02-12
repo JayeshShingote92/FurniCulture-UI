@@ -8,7 +8,8 @@ import { map } from 'rxjs/operators';
 })
 export class CommonService {
 
-  baseURL = 'https://furnicultureapi.azurewebsites.net';
+  //baseURL = 'https://furnicultureapi.azurewebsites.net';
+  baseURL = 'https://localhost:7222';
   constructor(private httpClient: HttpClient) { }
 
 
@@ -18,5 +19,13 @@ export class CommonService {
 
   addSubscriptionEmail(data:any): Observable<any> {
     return this.httpClient.post(this.baseURL + '/api/UserRegistration/SaveSubscribedMail', data);
+  }
+
+  verifySubscriptionEmail(data:any): Observable<any> {
+    return this.httpClient.get(this.baseURL + '/api/UserRegistration/VerifyEmailSubscriber?emailId=' + data);
+  }
+
+  verifyUserRegistration(activationCode:any,emailId:any): Observable<any> {
+    return this.httpClient.get(this.baseURL + '/api/UserRegistration/VerifyUserAccount?activationCode='+activationCode+'&emailId='+emailId);
   }
 }

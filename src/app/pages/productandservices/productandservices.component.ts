@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./productandservices.component.css']
 })
 export class ProductandservicesComponent {
+  pageName: string = 'ProductandservicesModule';
+
   slideConfig = {  
     "slidesToShow": 4,  
     "slidesToScroll": 3,  

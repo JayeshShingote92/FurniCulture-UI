@@ -17,7 +17,7 @@
                     </div>
                 </form>
                 <div class="text-danger"
-                    *ngIf="(subsciptionmail.invalid && subsciptionmail.touched) || subsciptionmail.dirty"
+                    *ngIf="(subsciptionmail.invalid && subsciptionmail.touched) || subsciptionmail.dirty || subscriptionValidationFlag"
                     style="color: red;">
                     <small class="text-danger" *ngIf="subsciptionmail.errors?.required">Email is
                         required</small>
@@ -25,7 +25,7 @@
                         invalid</small>
                 </div>
             </div>
-            <div class="err">
+            <div style="color: green;">
                 <span *ngIf="subscriptionFlag">
                     <q>Welcome! You are now signed up for emails.</q>
                 </span>

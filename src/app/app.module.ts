@@ -25,7 +25,7 @@ import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
-
+import { PromptDialogComponent } from './common/components/prompt-dialog/prompt-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +43,7 @@ import { ButtonModule } from 'primeng/button';
     ConvertingmoduleComponent,
     AntiquemoduleComponent,
     EnquiryComponent,
+    PromptDialogComponent,
   ],
   imports: [
     BrowserModule,

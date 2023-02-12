@@ -1,21 +1,21 @@
-<form>
+<form name="form">
     <div class="row">
         <div class="col-md-6 mt-2">
             <input class="form-control" type="text" placeholder="Name" name="Name" aria-label="default input example"
-                #Name="ngModel" [(ngModel)]="enquiryForm.name" required>
-            <div class="text-danger" *ngIf="Name.invalid && Name.touched" style="color: red;">
+                #Name="ngModel" [(ngModel)]="enquiryForm.name" required="">
+            <div class="text-danger" *ngIf="(Name.invalid && Name.touched)  || nameFlag" style="color: red;">
                 Name is Required.</div>
         </div>
         <div class="col-md-6 mt-2">
             <input class="form-control" type="text" placeholder="City" name="City" aria-label="default input example"
-                #City="ngModel" [(ngModel)]="enquiryForm.city" required>
-            <div class="text-danger" *ngIf="City.invalid && City.touched" style="color: red;">
+                #City="ngModel" [(ngModel)]="enquiryForm.city" required="">
+            <div class="text-danger" *ngIf="(City.invalid && City.touched)  || cityFlag" style="color: red;">
                 City is Required.</div>
         </div>
         <div class="col-md-6 mt-2">
             <input class="form-control" type="email" placeholder="Email" name="Email" aria-label="default input example"
                 #Email="ngModel" [(ngModel)]="enquiryForm.email" required="" [pattern]="emailPattern">
-            <div *ngIf="(Email.invalid && Email.touched) || Email.dirty">
+            <div *ngIf="(Email.invalid && Email.touched) || Email.dirty || emailFlag">
                 <small class="text-danger" *ngIf="Email.errors?.required">Email address is required</small>
                 <small class="text-danger" *ngIf="Email.errors?.pattern">Email address is invalid</small>
             </div>
@@ -23,8 +23,8 @@
         <div class="col-md-6 mt-2">
             <input class="form-control" type="text" placeholder="Contact Number" name="ContactNumber"
                 [pattern]="mobNumberPattern" aria-label="default input example" #ContactNumber="ngModel"
-                [(ngModel)]="enquiryForm.contactNumber" required>
-            <div class="text-danger" *ngIf="(ContactNumber.invalid && ContactNumber.touched) || ContactNumber.dirty"
+                [(ngModel)]="enquiryForm.contactNumber" required="">
+            <div class="text-danger" *ngIf="(ContactNumber.invalid && ContactNumber.touched) || ContactNumber.dirty || contactnoFlag"
                 style="color: red;">
                 <small class="text-danger" *ngIf="ContactNumber.errors?.required">Contact Number is required</small>
                 <small class="text-danger" *ngIf="ContactNumber.errors?.pattern">Contact Number is invalid</small>
@@ -32,15 +32,15 @@
         </div>
         <div class="col-md-12 mt-2">
             <textarea class="form-control" placeholder="Message" name="Message" aria-label="default input example"
-                #Message="ngModel" [(ngModel)]="enquiryForm.message" required></textarea>
-            <div class="text-danger" *ngIf="Message.invalid && Message.touched" style="color: red;">
+                #Message="ngModel" [(ngModel)]="enquiryForm.message" required=""></textarea>
+            <div class="text-danger" *ngIf="(Message.invalid && Message.touched)  || messageFlag" style="color: red;">
                 Message is Required.</div>
         </div>
         <div class="mt-3">
-            <button type="button" class="btn-1 pt-3 pb-3 col-md-3 text-center" (click)="onSubmit()">Submit</button>
+            <button type="submit" class="btn-1 pt-3 pb-3 col-md-3 text-center" (click)="onSubmit()" >Submit</button>
             <!-- <a class="btn-1 pt-3 pb-3 col-md-3 text-center">Send</a> -->
         </div>
-        <div class="err">
+        <div style="color: green;">
             <span *ngIf="registrationFlag">
                 A verification email has been sent to {{ userName }} on their email {{ userEmailId }}. Follow
                 the link in the verification email to confirm email.</span>
