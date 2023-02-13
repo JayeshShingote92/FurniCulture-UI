@@ -10,6 +10,8 @@ import { CareerComponent } from '../app/pages/career/career.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'home/:activationCode/:emailId', component: HomeComponent },
+  { path: 'home/:emailId',component: HomeComponent },
   { path: 'about', component: AboutusComponent },
   { path: 'productadservices', component: ProductandservicesComponent },
   { path: 'contact', component: ContactComponent },

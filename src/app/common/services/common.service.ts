@@ -8,8 +8,8 @@ import { map } from 'rxjs/operators';
 })
 export class CommonService {
 
-  //baseURL = 'https://furnicultureapi.azurewebsites.net';
-  baseURL = 'https://localhost:7222';
+  baseURL = 'https://furnicultureindiaapi.azurewebsites.net';
+  //baseURL = 'https://localhost:7222';
   constructor(private httpClient: HttpClient) { }
 
 
