@@ -86,6 +86,11 @@ export class EnquiryComponent implements OnInit {
   }
 
   resetForm() {
+    this.nameFlag = false;
+    this.cityFlag = false;
+    this.emailFlag = false;
+    this.contactnoFlag = false;
+    this.messageFlag = false;
     this.enquiryForm.name = '';
     this.enquiryForm.city = '';
     this.enquiryForm.email = '';
